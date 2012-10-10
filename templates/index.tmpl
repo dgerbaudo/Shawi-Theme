@@ -1,0 +1,60 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+<%block name="content">
+    % for post in posts:
+    <div class="post">
+        <article role="article">
+
+            <header>
+
+                <div class="page-header dashed">
+                    <h1 class="h2"><a href="${post.permalink(lang)}">${post.title(lang)}</a></h1>
+
+                    <p class="meta"><i class="icon-time"></i> ${post.date}</p>
+
+                    %if len(translations) > 1:
+                    %for langname in translations.keys():
+                    %if langname != lang:
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="${post.permalink(langname)}">${messages[langname][u"Read in English"]}</a>
+                    %endif
+                    %endfor
+                    %endif
+                </div>
+
+
+            </header>
+
+            <section class="clearfix">
+                ${post.text(lang, index_teasers)}
+            </section>
+
+            <footer>
+
+            </footer>
+
+        </article>
+        %if disqus_forum:
+        <a href="${post.permalink()}#disqus_thread">Comments</a>
+        %endif
+    </div>
+    % endfor
+
+<ul class="pager">
+  %if prevlink:
+    <li class="previous">
+        <a href="${prevlink}">${messages[lang]["&larr; Newer posts"]}</a>
+    </li>
+  %endif
+  %if nextlink:
+    <li class="next">
+        <a href="${nextlink}">${messages[lang]["Older posts &rarr;"]}</a>
+    </li>
+  %endif
+</ul>
+
+
+    %if disqus_forum:
+       <script type="text/javascript">var disqus_shortname="${disqus_forum}";(function(){var a=document.createElement("script");a.async=true;a.type="text/javascript";a.src="http://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(a)}());</script>
+    %endif
+</%block>

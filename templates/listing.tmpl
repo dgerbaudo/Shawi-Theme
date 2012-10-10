@@ -1,0 +1,12 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+<%block name="content">
+<div class="post">
+<ul class="breadcrumb">
+    % for link, crumb in crumbs:
+        <li><a href="${link}">/ ${crumb}</a></li>
+    % endfor
+</ul>
+${code}
+</div>
+</%block>

@@ -1,0 +1,18 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+<%block name="content">
+    <div class="post">
+        <!--Body content-->
+        
+         <div class="page-header dashed">
+                    <h1 class="h2">${title}</h1>
+        </div>
+
+        <ul class="unstyled">
+        % for text, link in items:
+            <li><a href="${link}"><span class="badge badge-info"> <i class="icon-tag"></i> ${text}</span></a>
+        % endfor
+        </ul>
+        <!--End of body content-->
+    </div>
+</%block>

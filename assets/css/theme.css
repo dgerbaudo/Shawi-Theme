@@ -1,0 +1,78 @@
+/* General
+-------------------------------------------------- */
+body {
+    background-color: #394755;
+    padding-top: 60px;
+}
+
+.dashed {
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'MuseoSans500Regular',Helvetica,Arial,sans-serif;
+font-weight: normal;
+}
+.txt-lefty {
+text-align: left;
+}
+.txt-middle {
+text-align: center;
+}
+.txt-righty {
+text-align: right;
+}
+.table-white {
+background-color: #FFFFFF;
+}
+.thead-light {
+background-color: #F1F1F1;
+}
+.vmiddle th, .vmiddle td {
+vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+.post {
+    background: url("../img/noise.png") repeat scroll 0 0 #FFFFFF;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+#copywrite {
+    background: none repeat scroll 0 0 #394755;
+    -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2) inset;
+    color: #D6DFE5;
+}
+
+#copywrite p {
+    padding: 20px 0;
+    font-family: 'MuseoSans500Regular', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+#totop {
+    cursor: pointer;
+}
+
+#addthisbox{top:60px;left:10px}
