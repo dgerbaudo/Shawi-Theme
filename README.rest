@@ -3,9 +3,13 @@ Shawi-Theme
 
 Responsive nikola theme.
 
-screenshot
-----------
+screenshots
+-----------
+Web Browser:
 .. image:: http://i.imgur.com/zQztg.png
+
+Phone Browser:
+.. image:: http://i.imgur.com/y8S0T.png
 
 License
 -------
