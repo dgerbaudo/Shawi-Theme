@@ -5,10 +5,10 @@ Responsive nikola theme.
 
 screenshots
 -----------
-Web Browser:
+* **Web Browser**
 .. image:: http://i.imgur.com/zQztg.png
 
-Phone Browser:
+* **Phone Browser**
 .. image:: http://i.imgur.com/y8S0T.png
 
 License
