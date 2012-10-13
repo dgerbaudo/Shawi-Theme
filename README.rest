@@ -11,6 +11,10 @@ screenshots
 * **Phone Browser**
 .. image:: http://i.imgur.com/y8S0T.png
 
+demo
+----
+http://www.danielgerbaudo.com
+
 License
 -------
 Shawi Theme is released under the GPL version 3 which is a free software license. 
